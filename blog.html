@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Blog Site</title>
-        <script src='https://unpkg.com/vue@next'></script>
+        <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
         <link link rel="stylesheet" href="blog.css">
         
     </head>
@@ -10,12 +10,8 @@
         <h1>Welcome to my Blog Site!</h1>
         
         <div id='blogPosts'>
-            <div id='singlePost'>
-                <h2>{{ blogPost.title }}</h2>
-                <h3>{{ blogPost.username }}</h3>
-                <h4>{{ blogPost.date }}</h4>
-                <p>{{ blogPost.content }}</p>
-            </div>
+            <blog-post v-for='post in posts' v-bind:blogpost='post'></blog-post>
         </div>
+        <script src='blog.vue'></script>
     </body>
 </html>
