@@ -15,11 +15,11 @@
 
         <div id='blogPostCreation'>
             <h2>Make a new blog post</h2>
-            <input><br>
-            <input><br>
-            <input><br>
-            <input><br>
-            <button>Publish Post</button>
+            <input v-model='title'><br>
+            <input v-model='username'><br>
+            <input v-model='date'><br>
+            <input v-model='content'><br>
+            <button v-on:click='publishPost'>Publish Post</button>
         </div>
         <script src='blog.vue'></script>
     </body>
