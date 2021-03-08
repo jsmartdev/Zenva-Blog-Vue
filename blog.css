@@ -6,7 +6,19 @@ html, body {
 
 #singlePost {
     padding: 10px;
+    margin-bottom: 40px;
     border-width: 2px;
     border-style: solid;
     border-color: blue;
+}
+
+#blogPostCreation {
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#blogPostCreation > * {
+    margin: 10px;
 }
